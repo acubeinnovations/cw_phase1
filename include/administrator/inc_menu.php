@@ -12,6 +12,17 @@
         <li class="divider"></li>
 
         <li class="has-dropdown">
+          <a href="#">Contents</a>
+          <ul class="dropdown">
+            <li><a href="contents.php">Contents</a></li>
+            <li><a href="contents_search.php">Search</a></li>
+            <li class="divider"></li>
+          </ul>
+        </li>
+
+        <li class="divider"></li>
+
+        <li class="has-dropdown">
           <a href="#">Administrator</a>
           <ul class="dropdown">
             <li><a href="users.php">Users</a></li>

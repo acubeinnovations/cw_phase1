@@ -16,8 +16,8 @@ $page = new Page;
     $page->conf_list = array("conf.php");
     $page->menuconf_list = array("menu_conf.php");
 	$page->connection_list = array("connection.php");
-	$page->function_list = array("functions.php", "functions_forum.php");
-	$page->class_list = array("class_user.php","class_user_session.php" );
+	$page->function_list = array("functions.php");
+	$page->use_dynamic_content = true;
 	
 
     $index=0;

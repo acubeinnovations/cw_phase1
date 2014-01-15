@@ -118,7 +118,7 @@ if ( !defined('CHECK_INCLUDED') ){
     <tr><td colspan="6">&nbsp;</td></tr>
     <tr><td colspan="6" align="center">
         <!--For pagination. we can create a  diff style  & use-->
-        <?$Mypagination->pagination_style1();?>
+        <?$Mypagination->pagination_style_buttons();?>
         </td></tr>
       <?}?>
       </table>
