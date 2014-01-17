@@ -16,6 +16,8 @@
           <ul class="dropdown">
             <li><a href="contents.php">Contents</a></li>
             <li><a href="contents_search.php">Search</a></li>
+            <li><a href="contents_import.php">Import</a></li>
+            <li><a href="contents_publishall.php">Publish All</a></li>
             <li class="divider"></li>
           </ul>
         </li>
