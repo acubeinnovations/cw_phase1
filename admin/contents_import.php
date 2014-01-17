@@ -24,12 +24,12 @@ $page = new Page;
 
     $index=0;
     $content_list[$index]['file_name']='administrator/inc_menu.php';
-    $content_list[$index]['var_name']='language';
+    $content_list[$index]['var_name']='menu';
     $index++;
 
     $page->content_list = $content_list;
 
-    $page->module_path = 'modules/contents/';
-    $page->module = 'contents_import';
+    $page->module_path = 'modules/content/';
+    $page->module = 'import';
     $page->display(); //completed pluggin with dynamic content will be displayed
 ?>                                `
