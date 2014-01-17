@@ -7,7 +7,7 @@ $breadcrumb='<a href="/index.php">Home</a> &raquo; <a href="/login.php">Login</a
 <fieldset>
     <legend>Login</legend> 
 <div class="row" >
-	<div class="medium-12 columns"><font color="red"><?php if(isset($login_error)){echo $login_error;}?></font>
+	<div class="medium-12 columns">
 		<form  id="ajax-contact-form" target="_self" method="post" action="<?php echo $current_url?>" name="frmlogin">
 		<div class="medium-12 columns ">
 						<div class="medium-5 columns ">
@@ -31,7 +31,7 @@ $breadcrumb='<a href="/index.php">Home</a> &raquo; <a href="/login.php">Login</a
 	
 		<div class="medium-12 columns ">
 						<div class="medium-5 columns ">
-							<input  value="<?php echo $capSIGNIN; ?>" type="submit" name="submit" class="tiny success button" >
+							<input  value="<?php echo $capSIGNIN; ?>" type="submit" name="submit" class="tiny  button" >
          					    <input name="h_id" value="" type="hidden"><input name="h_login" value="pass" type="hidden">
 								<a href="forgot_password.php" class="button-link">Forgot Password?</a>
 						 </div>

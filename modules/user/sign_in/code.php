@@ -26,9 +26,13 @@ if(isset($_POST['submit']) and $_POST['submit'] == $capSIGNIN)
 				exit();
 		  } else{
 			  $login_error = "Invalid Username or password!";
+			$_SESSION[SESSION_TITLE.'flash'] = $login_error;
 		  }
 		  
-	}
+	}else{
+ 	$_SESSION[SESSION_TITLE.'flash'] = $login_error;
+
+}
 	
 	
 }
