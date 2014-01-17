@@ -18,7 +18,7 @@ $page = new Page;
 	$page->connection_list = array("connection.php");
 	$page->function_list = array("functions.php");
 	$page->use_dynamic_content = true;
-	
+	$page->dynamic_content_list = array("aboutus.php");
 
     $index=0;
 

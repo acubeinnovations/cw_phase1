@@ -1,13 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 3.4.10.1deb1
+-- version 4.0.6deb1
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jan 13, 2014 at 10:46 AM
--- Server version: 5.5.34
--- PHP Version: 5.3.10-1ubuntu3.9
+-- Generation Time: Jan 16, 2014 at 12:29 PM
+-- Server version: 5.5.34-0ubuntu0.13.10.1
+-- PHP Version: 5.5.3-1ubuntu2.1
 
-SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 
@@ -60,11 +60,12 @@ CREATE TABLE IF NOT EXISTS `contents` (
   `language_id` int(11) NOT NULL,
   `contenttype_id` int(11) NOT NULL,
   `publish` tinyint(4) NOT NULL DEFAULT '0',
+  `icon` text COLLATE utf8_unicode_ci,
   PRIMARY KEY (`id`),
   KEY `page_id` (`page_id`),
   KEY `language_id` (`language_id`),
   KEY `contenttype_id` (`contenttype_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -102,7 +103,7 @@ CREATE TABLE IF NOT EXISTS `pages` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
 

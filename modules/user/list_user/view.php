@@ -51,8 +51,8 @@
     <div class="row">
 
         <div class="medium-6 columns">
-            <input class="small button" value="submit" type="submit" name="submit" >
-			<a href="user.php" class = "small secondary button" > Add New User</a>
+            <input class="tiny button" value="submit" type="submit" name="submit" >
+			<a href="user.php" class = "tiny secondary button" > Add New User</a>
         </div>
     </div>
 
@@ -64,7 +64,7 @@
 
 
 
-<table width="100%">
+<table>
 	<thead>
 		<tr>
 			<th class="slno"></th>
@@ -81,7 +81,7 @@
 	</thead>
     <?php
     if ( $data_bylimit == false ){?>
-     <tr><td colspan="9" align="center" class="message" >No Records Found!</td></tr>
+     <tr><td >No Records Found!</td></tr>
   </table>
     <?php
      }
@@ -89,18 +89,14 @@
 <?php
      //to number each record in a page
     
-     $style = "row_lite";
+     
      $index = 0;
      $slno = ($Mypagination->page_num*$Mypagination->max_records)+1;
      while ( $count_data_bylimit > $index ){
         $link = "user.php?id=".$data_bylimit[$index]["id"]."";
 	    $link_reset_pswd="update_user_password.php?id=".$data_bylimit[$index]["id"]."";
         $link_credit = "set_credit.php?id=".$data_bylimit[$index]["id"]."";
-		if ( $style == "row_lite" ){
-			$style="row_dark";
-		}else{
-			$style="row_lite";
-		}
+		
 
 ?>
 	<tr>

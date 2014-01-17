@@ -14,7 +14,7 @@ class Content {
 	var $editor_page_height=500;
 	var $editor_page_top=100;
 	var $editor_page_left=100;
-
+	
 	var $search_page='contents_search.php';
 
 	var $id ;
@@ -32,7 +32,7 @@ class Content {
 	var $content ;
 	var $publish ;
 	var $publish_status ;
-
+	var $icon="/images/icon/content/default.png";
 
 // for error handling
 	var $err_no=gINVALID;
