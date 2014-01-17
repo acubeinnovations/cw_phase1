@@ -28,11 +28,11 @@ if ( !defined('CHECK_INCLUDED') ){
 <?php
          $index++;
     }
-}
+}if(isset($count_data_bylimit)){
 	if($count_data_bylimit<4){
 ?>
 		<div class="medium-<?php echo $col; ?> columns">&nbsp;</div><div class="medium-<?php echo $col; ?> columns">&nbsp;</div>
-	<?php } ?>
+	<?php }} ?>
 </div>
 </div>
 </fieldset>

@@ -118,6 +118,6 @@ if ( !defined('CHECK_INCLUDED') ){
       <?php }?>
       </table>
  <!--For pagination. we can create a  diff style  & use-->
-
-<?php $Mypagination->pagination_style_numbers_with_buttons(); ?>
+<?php if ( $data_bylimit!= false ){ 
+$Mypagination->pagination_style_numbers_with_buttons(); }?>
 

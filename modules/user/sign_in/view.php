@@ -7,7 +7,7 @@ $breadcrumb='<a href="/index.php">Home</a> &raquo; <a href="/login.php">Login</a
 <fieldset>
     <legend>Login</legend> 
 <div class="row" >
-	<div class="medium-12 columns">
+	<div class="medium-12 columns"><font color="red"><?php if(isset($login_error)){echo $login_error;}?></font>
 		<form  id="ajax-contact-form" target="_self" method="post" action="<?php echo $current_url?>" name="frmlogin">
 		<div class="medium-12 columns ">
 						<div class="medium-5 columns ">
